@@ -5,8 +5,7 @@ const circles= document.querySelectorAll(".circle");
 
 let currentActive = 1;
 
-next.addEventListener("click",() =>{
-    
+next.addEventListener("click",() =>{    
     if(currentActive < circles.length){
         currentActive++
     }
@@ -14,13 +13,11 @@ next.addEventListener("click",() =>{
     update();
 })
 
-prev.addEventListener("click",() =>{
-    
+prev.addEventListener("click",() =>{    
     if(currentActive > 1){
         currentActive--
     }
 
-    console.log(currentActive);
     update();
 })
 
